@@ -31,6 +31,11 @@ body {
   margin-right: auto;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*убираем точки у всех списков*/
 .main-menu,
 .header-address,
@@ -85,13 +90,18 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  padding-left: 0px;
 }
 
-.menu-item:not(:last-child) {
+.menu-item:not(:last-child),
+.address-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .header-address {
+  display: flex;
+  justify-content: flex-end;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
