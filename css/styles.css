@@ -68,6 +68,8 @@ body {
 .list-button,
 .list-images {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-link:hover,
@@ -173,6 +175,11 @@ body {
   border-radius: 4px;
 }
 
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .phantom-title {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -189,8 +196,6 @@ body {
   justify-content: space-between;
 
   padding-left: 0;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .features-item:not(:last-child) {
@@ -269,8 +274,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -280,8 +283,11 @@ body {
   line-height: 1.19;
   text-align: center;
   color: #757575;
+}
 
+.team-title {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .footer {
@@ -304,6 +310,7 @@ body {
   font-style: normal;
   color: var(--background-light-text);
   line-height: 1.71;
+  margin-top: 20px;
 }
 
 .link-footer {
@@ -312,9 +319,17 @@ body {
   line-height: 1.71;
   color: var(--background-link-text);
   text-decoration: none;
+
+  display: block;
+  margin-top: 9px;
 }
 
 /*страница portfolio.html*/
+
+.main-portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .filter-button {
   font-weight: 500;
@@ -335,13 +350,12 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  text-align: center;
+  margin-bottom: 4px;
 }
 
 .list-button {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -371,14 +385,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
+}
+
+.title-picture {
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .list-images {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 94px;
   margin-top: 0;
   margin-right: -30px;
 }
