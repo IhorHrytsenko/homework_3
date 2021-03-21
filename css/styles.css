@@ -55,6 +55,8 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /*убираем точки у всех списков*/
@@ -152,6 +154,11 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   display: block;
   margin-left: auto;
@@ -280,6 +287,8 @@ body {
 
 .footer {
   background-color: var(--backgrount-footer);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .logo-footer {
@@ -327,10 +336,60 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  text-align: center;
+}
+
+.list-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.item-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  color: var(--main-title-color);
+  background-color: var(--background-second);
+  border: 0;
+  border-radius: 4px;
+}
+
+.filter-button:focus,
+.filter-button:hover {
+  color: var(--background-light-text);
+  background-color: var(--main-interactiv-color);
 }
 
 .text-image {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
+}
+
+.list-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 94px;
+  margin-top: 0;
+  margin-right: -30px;
+}
+
+.item-images:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.item-images {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
