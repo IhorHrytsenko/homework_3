@@ -14,6 +14,23 @@
   --background-second: #f5f4fa;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 body {
   font-family: var(--main-font);
   color: var(--main-title-color);
@@ -33,7 +50,11 @@ body {
 
 .header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /*убираем точки у всех списков*/
@@ -107,6 +128,12 @@ body {
   letter-spacing: 0.02em;
 }
 
+.main-section {
+  background-color: var(--backgrount-footer);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -114,15 +141,29 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--background-light-text);
+
+  margin-bottom: 30px;
 }
 
 .main-button {
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--background-light-text);
+  background-color: var(--main-interactiv-color);
+
+  border: 0;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
 }
 
 .phantom-title {
@@ -136,11 +177,26 @@ body {
   overflow: hidden;
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 0;
+
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -148,11 +204,58 @@ body {
   color: var(--main-text-color);
 }
 
+.what-we-do-section {
+  padding-bottom: 94px;
+}
+
 .second-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.what-we-do {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  padding-left: 0;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.what-we-do-item:not(:last-child) {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
+}
+
+.team-section {
+  background-color: var(--background-second);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -30px;
+  padding-left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item:not(:last-child) {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-right: 30px;
+}
+
+.team-item {
+  background-color: var(--background-light-text);
 }
 
 .team-people {
@@ -160,6 +263,9 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -168,6 +274,8 @@ body {
   line-height: 1.19;
   text-align: center;
   color: #757575;
+
+  margin-bottom: 30px;
 }
 
 .footer {
