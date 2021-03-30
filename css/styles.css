@@ -72,7 +72,8 @@ body {
 .what-we-do,
 .team-list,
 .list-button,
-.list-images {
+.list-images,
+.permanent-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -181,7 +182,8 @@ body {
   border-radius: 4px;
 }
 
-.features-section {
+.features-section,
+.permanent-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
